@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101992541069",
+    "firebase_url": "https://coinsapp-d36d9.firebaseio.com",
+    "project_id": "coinsapp-d36d9",
+    "storage_bucket": "coinsapp-d36d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101992541069:android:80aca3cefb33e0ba686bc4",
+        "android_client_info": {
+          "package_name": "com.example.coinsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101992541069-5u5jhm5apg70hqe9j1b04ji4g5fkf5pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coinsapp",
+            "certificate_hash": "90c451642a5b68f16429e522db411d8abfedc6e5"
+          }
+        },
+        {
+          "client_id": "101992541069-aau8ehhvno9ch8n1l5ol7g82nl4oqtrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWYgn6Zd5qoRDVR_tSPuk8-TgrpESIODs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101992541069-aau8ehhvno9ch8n1l5ol7g82nl4oqtrf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="start"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/imageViewAllCoinsItem"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:srcCompat="@drawable/ic_placeholder" />
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:padding="7dp"
+        android:paddingLeft="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        >
+        <TextView
+            android:id="@+id/allCoinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coin name"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/allCoinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coin price"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/allCoinYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coin year"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

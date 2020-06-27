@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyLibraryActivity"
+    android:label="My Collection"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/libraryCoinWrapper"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/libraryCoinWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/libraryButtons"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="6dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <Button
+                android:id="@+id/btnBackToCameraLib"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:text="@string/back_to_camera"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="4dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                />
+            <Button
+                android:id="@+id/btnAllCoinsLib"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="8dp"
+                android:text="All coins"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <ListView
+             android:id="@+id/libraryList"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_above="@+id/libraryButtons"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            >
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

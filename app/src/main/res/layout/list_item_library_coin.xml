@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="start"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/imageViewLibrary"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:srcCompat="@drawable/ic_placeholder" />
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/libraryCoinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coin name"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/libraryCoinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Coin price"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/libraryCoinYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Coin year"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/removeFromLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        app:srcCompat="@android:drawable/ic_delete" />
+</LinearLayout>

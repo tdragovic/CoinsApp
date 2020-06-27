@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/active_profile_picture"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title= "item1"
+        app:showAsAction ="always"
+        android:visible="true"/>
+    <item
+        android:id="@+id/profile_picture_google"
+        app:actionLayout="@layout/profile_image_view"
+        android:title="picture"
+        app:showAsAction ="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action1"
+        android:title= "All coins"
+        app:showAsAction = "never"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action11"
+        android:title= "Camera"
+        app:showAsAction = "never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action12"
+        android:title= "My collection"
+        app:showAsAction = "never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action2"
+        android:title= "Sign In"
+        app:showAsAction = "never"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action21"
+        android:title= "Sign Out"
+        app:showAsAction = "never"
+        android:visible="false"/>
+
+</menu>
